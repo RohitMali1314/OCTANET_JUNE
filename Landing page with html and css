@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Movie Ticket Booking</h1>
+            <p>Book your favorite movie tickets easily and quickly</p>
+        </header>
+        <div class="booking-form">
+            <form>
+                <label for="movie">Select Movie:</label>
+                <select id="movie" name="movie">
+                    <option value="movie1">Movie 1</option>
+                    <option value="movie2">Movie 2</option>
+                    <option value="movie3">Movie 3</option>
+                </select>
+                
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="time">Select Time:</label>
+                <select id="time" name="time">
+                    <option value="time1">10:00 AM</option>
+                    <option value="time2">01:00 PM</option>
+                    <option value="time3">04:00 PM</option>
+                    <option value="time4">07:00 PM</option>
+                </select>
+
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" min="1" max="10">
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    background-image: url('background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* For better text visibility */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.booking-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+select, input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e55b50;
+}
+
